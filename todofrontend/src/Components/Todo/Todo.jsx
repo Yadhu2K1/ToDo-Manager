@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useState } from "react";
 import AuthContext from "../../AuthContext";
 import axios from "axios";
 import "./Todo.css";
-
 const exportToMarkdown = async (todos, projectDetails) => {
   if (!todos) return;
 
