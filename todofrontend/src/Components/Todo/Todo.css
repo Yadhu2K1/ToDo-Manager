@@ -1,0 +1,170 @@
+.todo-container {
+  padding: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.create-button,
+.back-button-2,
+.export-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-button-2 {
+  background-color: #f44336;
+  color: white;
+}
+
+.export-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+.filter-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.project-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.todo-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.333% - 40px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.todo-index {
+  font-weight: bold;
+}
+
+.todo-status {
+  font-weight: bold;
+}
+
+.todo-status.completed {
+  color: green;
+}
+
+.todo-status.pending {
+  color: rgb(255, 1, 1);
+}
+
+.todo-body {
+  margin-bottom: 10px;
+}
+
+.todo-description {
+  font-size: 25px;
+  font-style: oblique;
+  color: #000;
+}
+
+.todo-dates {
+  font-size: 14px;
+  color: #000000;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-button,
+.todo-delete-button,
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.status-button:hover,
+.todo-delete-button:hover,
+.edit-button:hover {
+  color: #007bff;
+}
+
+.status-button {
+  color: #ff9800;
+}
+
+.todo-delete-button {
+  color: #f44336;
+}
+
+.edit-button {
+  color: #4caf50; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todo-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-card {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filter-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

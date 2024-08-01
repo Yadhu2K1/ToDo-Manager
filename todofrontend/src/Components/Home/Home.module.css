@@ -1,0 +1,162 @@
+.homeContainer {
+  padding: 20px;
+  background: #c7dae0;
+  min-height: 100vh;
+  overflow-y: auto; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 30px; 
+}
+
+.headerContent {
+  display: flex;
+  justify-content: center; 
+  flex-grow: 1; 
+}
+
+.createButton, .logoutButton, .editButton, .saveButton, .cancelButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.createButton {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+}
+
+.createButton:hover {
+  background: linear-gradient(45deg, #0056b3, #004494);
+  transform: scale(1.02);
+}
+
+.logoutButton {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: white;
+}
+
+.logoutButton:hover {
+  background: linear-gradient(45deg, #c82333, #ab1e1e);
+  transform: scale(1.02);
+}
+
+.editButton {
+  background: linear-gradient(45deg, #ffc107, #e0a800);
+  color: #000;
+}
+
+.editButton:hover {
+  background: linear-gradient(45deg, #e0a800, #d39e00);
+  transform: scale(1.02);
+}
+
+.saveButton {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+}
+
+.saveButton:hover {
+  background: linear-gradient(45deg, #0056b3, #004494);
+  transform: scale(1.02);
+}
+
+.cancelButton {
+  background: linear-gradient(45deg, #6c757d, #5a6268);
+  color: white;
+}
+
+.cancelButton:hover {
+  background: linear-gradient(45deg, #5a6268, #4e555b);
+  transform: scale(1.02);
+}
+
+.welcomeMessage {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #343a40;
+}
+
+.projectList {
+  padding: 20px;
+  text-align: center; 
+}
+
+.projectCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.projectCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.projectCard h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #343a40;
+}
+
+.projectActions {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+
+.viewButton, .deleteButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.viewButton {
+  background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.viewButton:hover {
+  background: linear-gradient(45deg, #218838, #1e7e34);
+  transform: scale(1.02);
+}
+
+.deleteButton {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+}
+
+.deleteButton:hover {
+  background: linear-gradient(45deg, #c82333, #ab1e1e);
+  transform: scale(1.02);
+}
+
+.editInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
