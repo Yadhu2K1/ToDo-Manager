@@ -2,8 +2,6 @@ import { useNavigate } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import AuthContext from "../../AuthContext";
 import axios from "axios";
-import { AiOutlineDelete, AiOutlineEdit } from 'react-icons/ai';
-import { BsCheckLg } from 'react-icons/bs';
 import "./Todo.css";
 
 const exportToMarkdown = async (todos, projectDetails) => {
@@ -266,19 +264,19 @@ const Todo = () => {
                   className="status-button"
                   onClick={() => changeStatus(todo.id, todo.status, todo.description)}
                 >
-                  <BsCheckLg />
+                  Change Status
                 </button>
                 <button
                   className="edit-button"
                   onClick={() => startEditing(todo.id, todo.description)}
                 >
-                  <AiOutlineEdit />
+                  Edit
                 </button>
                 <button
                   className="todo-delete-button"
                   onClick={() => deleteTodo(todo.id)}
                 >
-                  <AiOutlineDelete />
+                  Delete
                 </button>
               </div>
             </div>
