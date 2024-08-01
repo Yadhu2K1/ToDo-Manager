@@ -1,6 +1,8 @@
+
 .todo-container {
   padding: 20px;
 }
+
 
 .actions {
   display: flex;
@@ -9,29 +11,41 @@
 }
 
 .create-button,
-.back-button-2,
-.export-button {
+.export-button,
+.back-button-2 {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
 }
 
 .create-button {
   background-color: #007bff;
-  color: white;
 }
 
-.back-button-2 {
-  background-color: #f44336;
-  color: white;
+.create-button:hover {
+  background-color: #0056b3;
 }
 
 .export-button {
   background-color: #2196f3;
-  color: white;
 }
+
+.export-button:hover {
+  background-color: #1a78c2;
+}
+
+.back-button-2 {
+  background-color: #f44336;
+}
+
+.back-button-2:hover {
+  background-color: #d32f2f;
+}
+
 
 .filters {
   display: flex;
@@ -46,6 +60,7 @@
   cursor: pointer;
   background-color: #f0f0f0;
   font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .filter-button.active {
@@ -53,10 +68,21 @@
   color: white;
 }
 
+.filter-button:hover {
+  background-color: #e0e0e0;
+}
+
+
 .project-header {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.project-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
 
 .todo-list {
   display: flex;
@@ -64,6 +90,7 @@
   gap: 20px;
 }
 
+/* Individual todo card styling */
 .todo-card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -72,6 +99,11 @@
   width: calc(33.333% - 40px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  transition: box-shadow 0.3s;
+}
+
+.todo-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .todo-header {
@@ -84,6 +116,7 @@
   font-weight: bold;
 }
 
+
 .todo-status {
   font-weight: bold;
 }
@@ -93,24 +126,26 @@
 }
 
 .todo-status.pending {
-  color: rgb(255, 1, 1);
+  color: red;
 }
 
+/* Body of each todo card */
 .todo-body {
   margin-bottom: 10px;
 }
 
 .todo-description {
-  font-size: 25px;
-  font-style: oblique;
+  font-size: 18px;
+  font-style: italic;
   color: #000;
 }
 
 .todo-dates {
   font-size: 14px;
-  color: #000000;
+  color: #555;
 }
 
+/* Actions (buttons) inside each todo card */
 .todo-actions {
   display: flex;
   gap: 10px;
@@ -123,10 +158,8 @@
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #000;
+  transition: color 0.3s;
 }
 
 .status-button:hover,
@@ -144,10 +177,10 @@
 }
 
 .edit-button {
-  color: #4caf50; 
+  color: #4caf50;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .todo-card {
     width: calc(50% - 20px);
