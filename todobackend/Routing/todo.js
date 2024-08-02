@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-// Creating a new todo
 router.post("/create", async (req, res) => {
   try {
     const { description, status, projectId } = req.body;
@@ -40,14 +39,14 @@ router.post("/fetch", async (req, res) => {
   }
 });
 
-// Update todo (description and/or status)
+
 router.post("/update", async (req, res) => {
   try {
     const { id, description, status } = req.body;
     const updated_date = new Date();
     const connection = req.app.locals.connection;
 
-    // Build the query dynamically based on which fields are provided
+  
     const updates = [];
     const params = [];
 
