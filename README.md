@@ -40,7 +40,7 @@ node server.js
 ```
 cd todofrontend
 ```
-5.Run the following commands to access the app at http://localhost:3000/:
+5.Run the following commands to view the app at http://localhost:3000/:
 ```
 npm install
 npm start
