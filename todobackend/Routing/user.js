@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 
 const router = express.Router();
 
-//Creating new User
+
 router.post("/signup", async (req, res) => {
   try {
     const { username, password } = req.body;
@@ -24,7 +24,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-//Login for existing user
+
 router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body;
