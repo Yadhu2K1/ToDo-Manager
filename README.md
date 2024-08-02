@@ -27,6 +27,24 @@ The ToDo-Management App is a web-based application designed to simplify project 
 ```bash 
 git clone git@github.com:Yadhu2K1/ToDo-Manager.git
 ```
+2.Go to Backend Folder:
+```
+cd todobackend
+```
+3.Run these commands for setting the server:
+```
+npm install
+node server.js
+```
+4.Now Go to Frontend:
+```
+cd todofrontend
+```
+5.Run the following commands to access the app:
+```
+npm install
+npm start
+```
 
    
    
