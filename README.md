@@ -25,7 +25,7 @@ The ToDo-Management App is a web-based application designed to simplify project 
 
 1.Clone the repository:
 ```bash 
-git clone git@github.com:Yadhu2K1/ToDo-Manager.git
+git clone https://github.com/Yadhu2K1/ToDo-Manager.git
 ```
 2.Go to Backend Folder:
 ```
