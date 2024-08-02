@@ -19,8 +19,8 @@ The ToDo-Management App is a web-based application designed to simplify project 
     - File name: <Project title>.md
     - Project title as heading.
     - Summary: <No. of completed todos> / <No. of total todos> completed.
-    - Section 1: Task list of pending todos (with an open checkbox).
-    - Section 2: Task list of completed todos (with a checked box).
+    - Section 1: Task list of pending todos.
+    - Section 2: Task list of completed todos.
    
 ## Technologies Used
 -  Backend: Node js , Express js
