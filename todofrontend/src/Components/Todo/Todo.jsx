@@ -263,7 +263,7 @@ const Todo = () => {
                   className="status-button"
                   onClick={() => changeStatus(todo.id, todo.status, todo.description)}
                 >
-                  Change Status
+                  Update Status
                 </button>
                 <button
                   className="edit-button"
