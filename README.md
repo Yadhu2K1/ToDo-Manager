@@ -22,6 +22,10 @@ The ToDo-Management App is a web-based application designed to simplify project 
     - Section 1: Task list of pending todos.
     - Section 2: Task list of completed todos.
 ## Lets Start
+
+1.Clone the repository:
+[Link Text](git clone https://github.com/Yadhu2K1/ToDo-Manager.git)
+
    
    
 ## Technologies Used
