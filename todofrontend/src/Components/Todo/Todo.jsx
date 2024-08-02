@@ -4,7 +4,7 @@ import AuthContext from "../../AuthContext";
 import axios from "axios";
 import "./Todo.css";
 const exportToMarkdown = async (todos, projectDetails) => {
-  if (!todos) return;
+  if (!todos || !projectDetails) return;
 
   const completedCount = todos.filter(todo => todo.status === "Completed").length;
   const totalCount = todos.length;
@@ -25,8 +25,10 @@ const exportToMarkdown = async (todos, projectDetails) => {
   const blob = new Blob([markdownContent], { type: 'text/markdown' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
+  
+  const sanitizedTitle = projectDetails.title.replace(/[\/\\?%*:|"<>]/g, '-');
   link.href = url;
-  link.download = 'todo_list.md';
+  link.download = `${sanitizedTitle}.md`; 
   document.body.appendChild(link);
   link.click();
   URL.revokeObjectURL(url);
@@ -38,7 +40,7 @@ const exportToMarkdown = async (todos, projectDetails) => {
       {
         public: false,
         files: {
-          'todo_list.md': {
+          [`${sanitizedTitle}.md`]: {
             content: markdownContent,
           },
         },
@@ -62,6 +64,7 @@ const exportToMarkdown = async (todos, projectDetails) => {
     alert('An error occurred while exporting markdown content as a Gist.');
   }
 };
+
 
 const Todo = () => {
   const navigate = useNavigate();
