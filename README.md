@@ -36,11 +36,11 @@ cd todobackend
 npm install
 node server.js
 ```
-4.Now Go to Frontend:
+4.Now Go to Frontend folder:
 ```
 cd todofrontend
 ```
-5.Run the following commands to access the app:
+5.Run the following commands to access the app at http://localhost:3000/:
 ```
 npm install
 npm start
