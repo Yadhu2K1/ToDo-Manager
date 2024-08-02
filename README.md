@@ -16,7 +16,7 @@ The ToDo-Management App is a web-based application designed to simplify project 
 - **Export Summary as Gist**:
   - Generate project summary in markdown format.
   - Export the summary as a secret gist on GitHub with the following format:
-    - File name: <Project title>.md
+    - File name: project title.md
     - Project title as heading.
     - Summary: <No. of completed todos> / <No. of total todos> completed.
     - Section 1: Task list of pending todos.
